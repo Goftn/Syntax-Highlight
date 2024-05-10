@@ -1,0 +1,233 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "lang.rh"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+
+#include "..\demoplug.rh2"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutrální resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1250)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "lang.rh\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "\r\n"
+    "#include ""..\\demoplug.rh2""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)\r\n"
+    "LANGUAGE LANG_NEUTRAL,SUBLANG_NEUTRAL\r\n"
+    "#pragma code_page(1250)\r\n"
+    "#include ""lang.rc2""   // non-Microsoft Visual C++ edited resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CFGPAGEFIRST DIALOGEX 66, 53, 205, 84
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "First page"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Test string:",IDC_STATIC_1,7,10,40,8
+    EDITTEXT        IDC_TESTSTRING,53,8,144,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Test number:",IDC_STATIC_2,7,25,44,8
+    EDITTEXT        IDC_TESTNUMBER,53,23,54,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "must be less than 10",IDC_STATIC_3,112,25,72,8
+    CONTROL         "",IDC_STATIC_4,"Static",SS_ETCHEDHORZ | WS_GROUP,57,53,143,1
+    LTEXT           "Here is combo",IDC_STATIC_5,5,49,52,8
+    LTEXT           "Test combo:",IDC_STATIC_6,15,62,44,8
+    COMBOBOX        IDC_COMBO,61,60,113,50,CBS_DROPDOWNLIST | WS_GROUP | WS_TABSTOP
+END
+
+IDD_CFGPAGESECOND DIALOGEX 66, 53, 205, 61
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Second page"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Checkbox",IDC_CHECK,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,5,60,12
+    CONTROL         "Radio 1",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,5,20,60,12
+    CONTROL         "Radio 2",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,5,32,60,12
+    CONTROL         "Radio 3",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,5,44,60,12
+END
+
+IDD_CFGPAGEVIEWER DIALOGEX 66, 53, 415, 270
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "File extensions"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,5,4,403,261,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_PATHDLG DIALOGEX 66, 53, 459, 228
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Configuration of Syntax Highlighting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "File content:",IDC_STATIC_1,50,96,52,8
+    EDITTEXT        IDC_PATHSTRING,95,95,358,104,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL | WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,349,206,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,403,206,50,14
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,55,12,9,10
+    LTEXT           "Highlighting",IDC_STATIC,12,12,40,10
+    LTEXT           "File extension:",IDC_STATIC,240,41,55,15
+    LTEXT           "File name:",IDC_STATIC,253,17,54,13
+    EDITTEXT        IDC_EDIT2,297,41,156,23,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,297,17,156,23,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL
+    PUSHBUTTON      "Load file",IDC_BUTTON1,94,206,50,14
+    PUSHBUTTON      "Save file",IDC_BUTTON2,148,206,50,14
+    LTEXT           "Directory:",IDC_STATIC,58,66,32,8
+    EDITTEXT        IDC_EDIT4,95,66,358,28,ES_MULTILINE | ES_AUTOHSCROLL | WS_HSCROLL
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,444,6,9,10
+    LTEXT           "Add file to language rule definitions",IDC_STATIC,326,6,115,10
+    PUSHBUTTON      "Show",IDC_BUTTON3,151,10,50,14
+    LTEXT           "Show file exstentions:",IDC_STATIC,79,12,72,8
+END
+
+IDD_CONNECT DIALOGEX 28, 35, 413, 269
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "File extentions"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,395,256,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_PROGRESSDLG DIALOGEX 18, 80, 353, 77
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "Deleting",IDC_STATIC_1,3,11,37,8
+    CONTROL         "",IDT_FILENAME,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | WS_GROUP,43,11,305,8
+    RTEXT           "Total:",IDC_STATIC_2,16,35,24,8
+    LTEXT           "",IDP_PROGRESSBAR,43,34,297,12,NOT WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,151,57,50,14
+END
+
+IDD_CTRLEXAMPLE DIALOGEX 32, 40, 463, 236
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Extentions file"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,3,3,455,229,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CFGPAGEFIRST, DIALOG
+    BEGIN
+    END
+
+    IDD_CFGPAGESECOND, DIALOG
+    BEGIN
+    END
+
+    IDD_CFGPAGEVIEWER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 205
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_PATHDLG, DIALOG
+    BEGIN
+    END
+
+    IDD_CONNECT, DIALOG
+    BEGIN
+    END
+
+    IDD_PROGRESSDLG, DIALOG
+    BEGIN
+    END
+
+    IDD_CTRLEXAMPLE, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_PATHDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CONNECT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CFGPAGEVIEWER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CTRLEXAMPLE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Neutrální resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL,SUBLANG_NEUTRAL
+#pragma code_page(1250)
+#include "lang.rc2"   // non-Microsoft Visual C++ edited resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
